@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h3><u>Personal information</u></h3>
+    <ol>
+      <li><strong>Web page: <a href="https://inverfree.com">inverfree.com</a></strong></li>
+      <li><strong>Telephone number:</strong> +54 9 11 5335 7384</li>
+      <li><strong>Email:</strong> sportiz91@gmail.com</li>
+    </ol>
+
+    <form action="mailto:contacto@inverfree.com" method="post" enctype="text/plain"> <!-- el método de encriptamiento tiene que ser text/plain-->
+
+      <label>Your name:</label>
+      <input type="text" name="YourName" value=""> <br><br> <!-- los name identifican la data que está en los inputs -->
+      <label>Your email:</label>
+      <input type="email" name="YourEmail" value=""><br><br>
+      <label>Your message:</label><br>
+      <textarea name="YourMessage" rows="5" cols="40"></textarea><br> <!-- text area me permite generar un espeacio para escribir. Rows -> alto, Cols -> ancho -->
+      <input type="submit" name="" value="Send you message">
+
+      <!-- le asignamos name a cada input (salvo a submit). Entonces, cuando querramos enviar el formulario, al pasarle la data al mail Client
+      sabe bien como rellenar los campos! -->
+
+    </form>
+
+  </body>
+</html>

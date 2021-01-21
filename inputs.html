@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs type practice</title>
+  </head>
+  <body>
+
+
+    <form class="" action="index.html" method="post">
+
+      <input type="text" name="" value="Write something">
+      <input type="submit" name="" value="Send"> <br><br>
+      <input type="file" name="" value=""> <br><br>
+      <input type="date" name="" value=""> <br><br>
+      <input type="radio" name="" value=""> <br><br>
+      <input type="range" name="" value="">
+
+    </form>
+
+    <form class="" action="index.html" method="post">
+
+      <label>Your name:</label>
+      <input type="text" name="" value="">
+      <input type="color" name="" value="Welcome"> <br> <br> <!-- .br es line breaker, es decir, me tira un espacio-->
+      <label>Your password:</label>
+      <input type="password" name="" value=""> <br><br>
+      <label>Do you want to sign up to the email list?</label>
+      <input type="checkbox" name="" value="">
+      <input type="submit" name=""> <br><br>
+      <label>What are you looking for?</label>
+      <input type="search" name="" value="Crypto"> <br><br> <!-- por default viene escrito Crypto-->
+      <label>Enter your Email</label>
+      <input type="email" name="" value="">
+
+      <!-- Vamos a querer agregar un formulario. El formulario lleva un poco más que HTML porque querés programar el comportamiento
+      del mismo y darle algo de estilo (CSS y JavaScript). Ver la documentación de mdn HTML form.
+
+      El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten
+      a un usuario enviar información a un servidor web.
+
+      Es posible usar las pseudo-clasess de CSS :valid e :invalid  para darle estilos a un elemento form.
+
+      Atributo Class -> me permite ponerle un nombre al elemento. Después lo puedo llamar a través de JavaScript o CSS.
+      Atributo Action -> La URI de un programa que procesa la información enviada por medio del formulario.
+      Atributo method -> puede ser post o get. Post corresponde al método post HTTP (los datos del formulario son incluidos en el cuerpo
+      del formulario y son enviados al servidor). Get corresponde al método GET HTTP (los datos del formulario son adjuntados a la URI
+      del atributo  action , con un '?' como separador,  y la URI resultante es enviada al servidor.
+      Use este método cuando el formulario no tiene efectos secundarios y contiene solo caracteres ASCII.)
+      Atributo input type = 'text' -> elements of type text create basic single-line text fields.
+      Atributo name -> Name of the element. For example used by the server to identify the fields in form submits.
+      Atributo value -> Defines a default value which will be displayed in the element on page load. Sería el nombre del botón por ejemplo.
+      Atributo input type = 'submit' -> <input> elements of type submit are rendered as buttons. When the click event occurs
+      (typically because the user clicked the button), the user agent attempts to submit the form to the server.
+
+      Atributo input type = 'color' -> me genera un botón para elegir el color que desee (y puedo submitir el formulario con mi color elegido
+      o bien puedo cambiar lo que se muestra en función del color, etc)
+      Atributo input type = 'checkbox' -> me genera un checkbox al lado.
+
+
+      Pero.. Con HTML estamos cerca de programar enteramente el formulario. Input -> se utiliza cuando querés que el usuario
+      de la página llene algún campo
+
+      .input type 'text' -> un cuadrado para que escriban algo
+      .input type 'submit' -> botón.-->
+
+      <!-- action quiere decir que cuando toque submit, me llevará a la página o a la acción que diga -->
+
+        <!-- metodo post me dice que todo lo que está escrito en el formulario, se transcribe y se envía al mail del que envía -->
+
+
+    </form>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html> <!-- HTML5 --> <!-- HTML = HyperText Markup Language. HyperText stands for links! -->
+<html lang="en" dir="ltr">
+
+<!-- lang = "en" en implica que el lenguaje en que está escrito el código + lenguaje en que tienen
+que escribir los desarrolladores es inglés. dir = "ltr" -> implica que el lenguaje elegido es left to right -->
+
+<head>
+
+  <!-- información que el Browser necesita para saber como cargar la página -->
+
+  <meta charset="utf-8">
+
+  <!-- metadata = datos que contienen datos. charset = 'utf-8' es la codificación
+  caracteres del teclado a unicode y unicode a lenguaje binario (1s y 0s) que comprende la computadora -->
+
+  <title> ⚠ Santiago's web page </title> <!-- .title es closing tag -->
+</head> <!-- head es closing tag -->
+
+<body>
+
+  <!-- el .body genera el contenido para nuestra web -->
+
+  <h1><u>Santiago Pablo Ortiz</u></h1>
+
+  <!-- encabezado nivel 1. Hay hasta h6. Si ponés más de h6 no te lo toma (te lo toma como párrafo) -->
+  <!-- -.u y .u/ para subrayar -->
+
+  <table cellspacing = "20">
+
+  <!-- el atributo .cellspacing de .table está DEPRECATED. Mejores tecnologías en CSS.-->
+
+    <tbody>
+      <tr>
+        <td><img src="Imágenes/Santi-Traje.jpg" width="200" height="231" alt="Santiago Pablo Ortiz"></td>
+        <td>
+          <p><em>Founder and CEO of <a href="https://inverfree.com" target="_blank">INVERFREE</a></em></p>
+          <p> Crypto Trader and Investor. Finance, Programming and Machine Learning 😎🔥 </p>
+          <a href="Contact me!.html" target="_blank">Contact me!</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Como cargar una imagen desde la web -> <img src="https://inverfree.com/wp-content/uploads/2020/08/Santi-Traje-600x692.jpg" width="200" height="231" alt="Santiago Pablo Ortiz"> -->
+
+  <!-- IMÁGENES:  puede ser local (de tu computadora) o un URL de una página web X
+  Atributo alt = "" -> permite poner una especie de pie de página a la imagen que estás subiendo a tu página.
+  Poner estos pie de páginas es bueno para el SEO. Es decir, si vos estás haciendo una página de criptomonedas y
+  ponés una foto de BTC que dice, "el bitcoin llegó a 40k", eso es bueno para el SEO de tu página
+  ¿Qué pasa si el source del cual estoy tomando la imagen se cae? -> no voy a ver la imagen. Por eso una alternativa
+  interesante es poner la imagen que quieras subir en el folder de tu proyecto de web page.
+  Atributo width ="" -> ancho. Atributo height = "" -> alto. -->
+
+  <!-- con <p> abro un párrafo y con <em> hago italics</em> </p> -->
+
+  <!-- nota: no se separa por párrafos solo con enter. Tengo que crear <p> diferentes. -->
+  <!-- Una idea buena, para evitar que te autocomplete si escribis .p y .p/ es ponerlo con "." al principio! -->
+  <!-- .b y .b/ es para hacer negrita y también .strong y .strong/ -->
+  <!-- .i y .i/ es para hacer cursiva y también .em y .em/ -->
+  <!-- Son mucho mejores .em y .em/ y .strong y .strong/ -->
+
+  <!--href = HyperText/Hyperlink Reference
+
+  Cuando usamos a href ="link al cual quiero ir" el a sería el elemnto y el href sería el atributo!
+  a = anchor element. Y el atributo href = contiene una URL que el HyperLink va a apuntar a.
+  Por convención, el link será azul si es algo a lo que nunca entramos y violeta si ya entramos alguna vez
+
+  Atributo target="_bland" hace que se abra la URL en una nueva pestala -->
+
+  <!--hr = horizontal rule. el .noshade hace que se vea más lindo! Además, las "" pueden ser también '' -->
+  <hr size='3' noshade>
+  <h3><u>Education</u></h3>
+  <ul>
+
+    <!-- .ul = 'unordered list' y es closing tag -> ./ul -->
+
+    <li><strong><u>2004 - 2009:</u></strong> Informatic's high school degree. Casa Salesiana Pio IX</li> <!-- .li = 'list item' y es closing tag -> ./li -->
+    <li><strong><u>2010 - 2013:</u></strong> Economics Bachelor. Universidad del CEMA. Egress date: december 2013</li>
+    <ul>
+
+      <!-- para hacer bullets adentro de bullets tengo que generar un .ul al mismo nivel que los .li -->
+
+      <li>Average: 7.31</li>
+    </ul>
+    <li><strong><u>2015 - 2017:</u></strong> Master in Finance. Universidad de San Andrés. Egress date: december 2017</li>
+    <ul>
+      <li>Average: 8.21</li>
+    </ul>
+  </ul>
+
+  <hr size='3' noshade>
+  <h3><u>Hobbies</u></h3>
+  <ol> <!-- ol = ordered list -->
+    <li><strong>Machine Learning</strong></li>
+    <li><strong>Web Development</strong></li>
+    <li><strong><a href="https://inverfree.com" target="_blank">Finance</a></strong></li>
+    <li><strong>Sports & Fitness</strong></li>
+    <li><strong>Friends & Family</strong></li>
+    <li><strong>Reading</strong></li>
+    <li><strong>Travel around the world</strong></li>
+  </ol>
+
+  <hr size = '3' noshade>
+  <h3><u>Work Experience</u></h3>
+  <table cellspacing =10>
+
+  <!-- ATENCIÓN! BORDE NO SE USA MÁS (DEPRECATED). ES POSIBLE QUE LUEGO LO TENGAMOS QUE SACAR -->
+
+  <!--Tables -> Adentro de la tabla podemos crear Table Rows y Table Data. Table Data = celdas
+  Table Row -> .tr; Table Data -> .td
+  Las tablas también tienen headers, body y footer. Copiando lo que tenemos para toma la website de HTML. Eso además de Las
+  filas y las celdas. .thead; .tbody; .tfoot.
+
+  Hay gente que separa los títulos y los pone en el table header y otras personas que los ponen en el table body.
+  Eso depende de cada uno. La realidad es que si ponés los títulos en el table header, cuando uses CSS podés programar
+  algunas cosas interesantes, como por ejemplo que cuando bajes en la página, el header de la tabla se siga viendo.
+
+  Ideal: poner los títulos en el header, el main en el body y quizás algún footer. Esto hará que luego cuando use CSS
+  sea más fácil
+
+  Deprecated: es cuando no se recomienda utilizar determinado elemento o atributo, porque hay tecnologías superadoras.
+  Ej: darle background color a una tabla con HTML no sería lo más recomendado. Hay una tecnología superadora que es CSS.
+  Incluso, son funciones que podrían llegar a sacarse en el futuro.
+
+  Atributo border (table) -> tamaño del borde en píxeles (ojo que está deprecated)
+
+  Importante: cuando vos abrís una .tr, cada .td va a ser una al lado de la otra (horizontalmente). A pesar de que los .td
+  los pongas uno abajo del otro.  -->
+
+    <thead>
+      <tr>
+        <th><u>Dates</u></th>
+        <th><u>Work</u></th>
+
+  <!-- Cuando usás .th HTML automáticamente te reconoce que son celdas encabezado y te las formatea al medio de la celda
+  y en negrita. Si en esta página básica no usáramos ni .thead ni .tbody y usáramos las .th, HTML seguiría reconociendo
+  que son celdas encabezado y las formatearía bien. No obstante es útil hacer la estructura correcta para cuando se use
+  CSS!
+
+  .th -> en .thead
+  .td y .tr -> en .tbody
+  y otras -> en .tfoot
+
+   -->
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2014 - 2015 (1 year)</td>
+        <td>Client Financial Analys @ Accenture</td>
+      </tr>
+      <tr>
+        <td>2013 - 2014 (1 year)</td>
+        <td>Financial Risk Analyst</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr size = '3' noshade>
+  <h3>Skills</h3>
+  <table cellspacing = "10">
+    <tr>
+      <td>Machine Learning</td>
+      <td>⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Web Development</td>
+      <td>⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Crypto</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+  </table>
+
+  <!-- NESTED TABLE DEL BONUS POINT
+  <table border="1">
+    <thead>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>Machine Learning</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Finance</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Crypto</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+        </td>
+      </tr>
+    </thead>
+  </table>
+ -->
+
+  <!-- Esto de acá es una nested table. Y son estructuras un tanto complicadas para hacer con HTML. Por eso, para el styling
+  , se recomienda CSS-->
+
+</body>
+
+</html>
